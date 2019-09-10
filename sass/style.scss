@@ -300,7 +300,8 @@ h1, h2, h3, h4, h5, h6 {
 
 // Section Heading
 .fh5co-section-lead {
-    font-size: 20px;
+    /*font-size: 20px;*/
+    font-size: 15px!important;
     text-transform: uppercase;
     letter-spacing: 2px;
     line-height: 22px;
