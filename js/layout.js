@@ -1,5 +1,5 @@
 $(function() {
-    $('#header_layout').load("layout/header.html", function() {
+    $('#layout_header').load("layout/header.html", function() {
 
         /* Navigation active status */
         var url = window.location.href;     // Returns full URL (https://example.com/path/example.html)
@@ -11,15 +11,15 @@ $(function() {
         var about_us = url_last_query.indexOf("about-us") >= 0;
 
         if (index || url_last_query === "") {
-            $("#header_layout header nav ul").find(".nav_index").addClass("active");
+            $("#layout_header header nav ul").find(".nav_index").addClass("active");
         } else if (activities) {
-            $("#header_layout header nav ul").find(".nav_activities").addClass("active");
+            $("#layout_header header nav ul").find(".nav_activities").addClass("active");
         } else if (travel_blog) {
-            $("#header_layout header nav ul").find(".nav_travel_blog").addClass("active");
+            $("#layout_header header nav ul").find(".nav_travel_blog").addClass("active");
         } else if (about_us) {
-            $("#header_layout header nav ul").find(".nav_about_us").addClass("active");
+            $("#layout_header header nav ul").find(".nav_about_us").addClass("active");
         }
     });
 
-
+    $('#layout_footer').load("layout/footer.html");
 });
